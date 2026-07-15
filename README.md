@@ -40,11 +40,12 @@ Start with the [documentation index](docs/README.md). The recommended reading or
 7. [Operating model](docs/04-operations/operating-model.md)
 8. [Policy and risk framework](docs/05-legal-risk/policy-and-risk-framework.md)
 9. [Brand and customer experience](docs/06-brand-experience/brand-and-customer-experience.md)
-10. [Product requirements](docs/07-product/product-requirements.md)
-11. [Data and technical architecture](docs/08-technology/data-and-architecture.md)
-12. [Pilot season roadmap](docs/09-launch/pilot-season-roadmap.md)
-13. [Sponsorship and partnership strategy](docs/10-partnerships/sponsorship-and-partnerships.md)
-14. [Growth plan](docs/11-growth/growth-plan.md)
+10. [Public website design document](docs/06-brand-experience/website-design-document.md)
+11. [Product requirements](docs/07-product/product-requirements.md)
+12. [Data and technical architecture](docs/08-technology/data-and-architecture.md)
+13. [Pilot season roadmap](docs/09-launch/pilot-season-roadmap.md)
+14. [Sponsorship and partnership strategy](docs/10-partnerships/sponsorship-and-partnerships.md)
+15. [Growth plan](docs/11-growth/growth-plan.md)
 
 ## Repository principles
 
@@ -59,4 +60,3 @@ Start with the [documentation index](docs/README.md). The recommended reading or
 ## Ownership and use
 
 All brand, business, product, competition, and software assets in this repository are intended for HTX Super League and TRIMNDS. No open-source license has been granted at this stage.
-

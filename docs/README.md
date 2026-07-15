@@ -17,11 +17,12 @@ The documents are ordered by dependency. Downstream product and technology decis
 | 7 | Operations | [Operating model](04-operations/operating-model.md) | Defines roles, processes, service levels, and matchday delivery |
 | 8 | Legal and risk | [Policy and risk framework](05-legal-risk/policy-and-risk-framework.md) | Defines legal review, insurance, safety, waivers, and policy inventory |
 | 9 | Brand and CX | [Brand and customer experience](06-brand-experience/brand-and-customer-experience.md) | Defines brand architecture and stakeholder journeys |
-| 10 | Product | [Product requirements](07-product/product-requirements.md) | Defines public, participant, and administrative software needs |
-| 11 | Technology | [Data and technical architecture](08-technology/data-and-architecture.md) | Defines the data model, system boundaries, security, and delivery approach |
-| 12 | Launch | [Pilot season roadmap](09-launch/pilot-season-roadmap.md) | Defines phases, gates, milestones, metrics, and first-season execution |
-| 13 | Partnerships | [Sponsorship and partnerships](10-partnerships/sponsorship-and-partnerships.md) | Defines partner targets, inventory, packages, and fulfillment |
-| 14 | Growth | [Growth plan](11-growth/growth-plan.md) | Defines evidence-based expansion after the pilot |
+| 10 | Website design | [Public website design document](06-brand-experience/website-design-document.md) | Defines the public website strategy, sitemap, page briefs, visual direction, components, and release states |
+| 11 | Product | [Product requirements](07-product/product-requirements.md) | Defines public, participant, and administrative software needs |
+| 12 | Technology | [Data and technical architecture](08-technology/data-and-architecture.md) | Defines the data model, system boundaries, security, and delivery approach |
+| 13 | Launch | [Pilot season roadmap](09-launch/pilot-season-roadmap.md) | Defines phases, gates, milestones, metrics, and first-season execution |
+| 14 | Partnerships | [Sponsorship and partnerships](10-partnerships/sponsorship-and-partnerships.md) | Defines partner targets, inventory, packages, and fulfillment |
+| 15 | Growth | [Growth plan](11-growth/growth-plan.md) | Defines evidence-based expansion after the pilot |
 | Reference | Research | [Houston market scan](research/houston-market-scan.md) | Records current market evidence and sources |
 
 ## Authority hierarchy
@@ -42,4 +43,3 @@ When documents conflict, resolve them in this order:
 - Competition rules: before registration opens; freeze at the published rules date except for safety or legal changes.
 - Product roadmap: at each release gate.
 - Sponsor inventory: before sale, after contracting, and after fulfillment.
-
