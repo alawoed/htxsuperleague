@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { ArrowUpRight, Menu, X } from "lucide-react";
-import { BrandMark, Button, Container } from "@htx/design-system";
+import { Button, Container } from "@htx/design-system";
 
 const navItems = [
   ["Competition", "#competition"],
@@ -34,7 +34,14 @@ export function SiteHeader() {
       <header className="site-header">
         <Container className="site-header__inner">
           <a className="site-header__brand" href="#top" aria-label="HTX Super League home">
-            <BrandMark variant="stacked" tone="light" />
+            <span className="site-header__logo-window" aria-hidden="true">
+              <img
+                src="/brand/htx-slab-white-on-black.png"
+                alt=""
+                width="1004"
+                height="396"
+              />
+            </span>
           </a>
 
           <nav className="desktop-nav" aria-label="Primary navigation">

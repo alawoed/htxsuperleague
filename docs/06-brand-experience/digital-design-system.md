@@ -20,7 +20,7 @@ The website takes structural inspiration from leading competition sites: clear c
 
 Volt is not embedded in the primary mark. The prior Volt-eye direction is retired.
 
-The repository currently uses a code-native monochrome placeholder because the supplied guide did not include its referenced SVG source files. Replace the component internals with the approved artwork without changing its `split` and `stacked` interface.
+The public site header uses the founder-supplied Stacked Slab PNG exactly as provided, with CSS cropping only its surrounding Ink presentation canvas. Do not recreate the mark with live type. The footer Split Bar and standalone favicon remain code-native monochrome stand-ins until their approved source files are supplied; replace those component internals without changing the public interface.
 
 ## Core palette
 

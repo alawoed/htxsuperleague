@@ -1,8 +1,7 @@
 # Web brand assets
 
-The website currently uses a code-native monochrome wordmark and a temporary monochrome favicon because the approved source SVG files were not included with the supplied brand-guide HTML.
+`htx-slab-white-on-black.png` is the approved Stacked Slab presentation supplied by the founders. The site header renders this exact artwork and crops only its surrounding Ink canvas with CSS; it must not be redrawn or reinterpreted.
 
-Replace these placeholders when the approved Stacked Slab, Split Bar, and standalone SVG source files are available. The component API intentionally supports both stacked and wide lockups so the swap does not require page-level layout changes.
+The footer Split Bar and favicon remain code-native monochrome stand-ins until their approved source artwork is supplied. The component API supports both stacked and split contexts so those assets can be substituted without changing page-level layout.
 
 The web implementation must not add a Volt eye or any other internal Volt detail to the mark.
-
