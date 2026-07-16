@@ -300,7 +300,7 @@ function App() {
       <footer className="site-footer">
         <Container>
           <div className="site-footer__top">
-            <BrandMark variant="stacked" tone="light" />
+            <BrandMark className="site-footer__brand" variant="split" tone="light" />
             <div className="site-footer__columns">
               <div>
                 <strong>Competition</strong>

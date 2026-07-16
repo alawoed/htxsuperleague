@@ -34,7 +34,7 @@ export function SiteHeader() {
       <header className="site-header">
         <Container className="site-header__inner">
           <a className="site-header__brand" href="#top" aria-label="HTX Super League home">
-            <BrandMark variant="split" tone="light" />
+            <BrandMark variant="stacked" tone="light" />
           </a>
 
           <nav className="desktop-nav" aria-label="Primary navigation">
@@ -89,4 +89,3 @@ export function SiteHeader() {
     </>
   );
 }
-

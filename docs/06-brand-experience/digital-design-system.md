@@ -14,8 +14,8 @@ The website takes structural inspiration from leading competition sites: clear c
 
 | Context | Mark | Approved treatment |
 |---|---|---|
-| Primary brand moment | Stacked Slab | Ink on Chalk/White, or Chalk/White on Ink |
-| Header and wide layouts | Split Bar | Ink on Chalk/White, or Chalk/White on Ink |
+| Primary brand moment and site header | Stacked Slab | Small HTX above the full Super League name; Ink on Chalk/White, or Chalk/White on Ink |
+| Footer and wide layouts | Split Bar | HTX beside the rule; Super League wraps immediately beside it in the lighter display weight |
 | Favicon and tiny utility context | Standalone HTX | Chalk/White on Ink; Volt on Ink is optional only after final artwork approval |
 
 Volt is not embedded in the primary mark. The prior Volt-eye direction is retired.
@@ -51,7 +51,7 @@ The repository currently uses a code-native monochrome placeholder because the s
 
 - **Barlow Condensed 600–800:** hero statements, page and section titles, competition data, scores.
 - **Manrope 400–700:** navigation, body copy, labels, forms, tables, and operational information.
-- Headlines use compact line-height and restrained uppercase; body copy remains sentence case.
+- Headlines use compact line-height and sentence case. Uppercase is reserved for the brand mark, short labels, statuses, and competition data.
 - Avoid using compressed display type for paragraphs or form fields.
 
 ## Layout
@@ -94,4 +94,3 @@ Every interactive state must include keyboard focus, hover where relevant, disab
 - Do not place essential text inside photography.
 - Respect `prefers-reduced-motion`; movement should clarify state, not decorate the page.
 - Minimum interactive target is 44 by 44 CSS pixels where layout permits.
-
