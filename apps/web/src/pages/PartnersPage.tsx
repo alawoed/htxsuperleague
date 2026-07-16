@@ -37,7 +37,7 @@ export function PartnersPage() {
         </Container>
       </section>
 
-      <section className="page-section page-section--panel">
+      <section className="page-section partner-showcase">
         <Container>
           <SectionHeader eyebrow="Current partners" title="The founding network." body="Official TRIMNDS portfolio companies and strategic launch partners supporting the venture's first chapter." />
           <div className="partner-roster__grid" role="list">

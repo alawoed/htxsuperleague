@@ -99,6 +99,23 @@
 .page-section--ink .htx-section-header p { color: rgb(244 241 232 / 0.68); }
 .page-section--ink .eyebrow { color: var(--htx-color-volt); }
 
+.partner-showcase {
+  background: var(--htx-color-ink);
+  color: var(--htx-color-chalk);
+}
+
+.partner-showcase .htx-section-header h2 {
+  color: var(--htx-color-chalk);
+}
+
+.partner-showcase .htx-section-header .eyebrow {
+  color: var(--htx-color-volt);
+}
+
+.partner-showcase .htx-section-header p {
+  color: rgb(244 241 232 / 0.7);
+}
+
 .metric-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
