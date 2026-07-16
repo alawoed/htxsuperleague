@@ -19,6 +19,7 @@ import {
   experiencePillars,
   updates,
 } from "./data/site-content";
+import { partners } from "./data/partners";
 
 function App() {
   return (
@@ -250,7 +251,59 @@ function App() {
           </Container>
         </section>
 
-        <section className="partner-band" id="partners">
+        <section className="partner-roster" id="partners" aria-labelledby="partners-title">
+          <Container>
+            <div className="partner-roster__header">
+              <div>
+                <span className="eyebrow">Founding partners</span>
+                <h2 id="partners-title">Backed by builders who believe in Houston.</h2>
+              </div>
+              <p>
+                Official TRIMNDS portfolio companies and strategic launch partners supporting
+                the first chapter of HTX Super League.
+              </p>
+            </div>
+
+            <div className="partner-roster__grid" role="list">
+              {partners.map((partner) => {
+                const logo = (
+                  <img
+                    src={partner.logo}
+                    alt={`${partner.name} logo`}
+                    width={partner.width}
+                    height={partner.height}
+                    loading="lazy"
+                  />
+                );
+
+                return partner.href ? (
+                  <a
+                    className={`partner-logo partner-logo--${partner.treatment}`}
+                    href={partner.href}
+                    target="_blank"
+                    rel="noreferrer"
+                    role="listitem"
+                    aria-label={`Visit ${partner.name}`}
+                    key={partner.name}
+                  >
+                    {logo}
+                  </a>
+                ) : (
+                  <div
+                    className={`partner-logo partner-logo--${partner.treatment}`}
+                    role="listitem"
+                    aria-label={`${partner.name}; production website pending`}
+                    key={partner.name}
+                  >
+                    {logo}
+                  </div>
+                );
+              })}
+            </div>
+          </Container>
+        </section>
+
+        <section className="partner-band" id="partner-inquiry">
           <Container className="partner-band__grid">
             <div>
               <span className="eyebrow eyebrow--volt">Build Houston's next competition</span>
@@ -258,7 +311,7 @@ function App() {
             </div>
             <div>
               <p>
-                We are developing relationships with venues, referees, media creators,
+                We are also developing relationships with venues, referees, media creators,
                 community organizations, and commercial partners who value organized local soccer.
               </p>
               <Button href="mailto:partners@htxsuperleague.com" variant="outline-inverse">

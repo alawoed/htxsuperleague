@@ -20,6 +20,7 @@ The documents are ordered by dependency. Downstream product and technology decis
 | 10 | Website design | [Public website design document](06-brand-experience/website-design-document.md) | Defines the public website strategy, sitemap, page briefs, visual direction, components, and release states |
 | 11 | Digital design | [Digital design system](06-brand-experience/digital-design-system.md) | Defines implemented web tokens, mark treatments, components, contrast, and accessibility rules |
 | 12 | Media assets | [Website image inventory](06-brand-experience/image-inventory.md) | Records prototype stock sources and the original photography shot list |
+| 12a | Partner assets | [Partner brand asset register](06-brand-experience/partner-brand-assets.md) | Records approved partner marks, source provenance, local paths, and link status |
 | 13 | Product | [Product requirements](07-product/product-requirements.md) | Defines public, participant, and administrative software needs |
 | 14 | Technology | [Data and technical architecture](08-technology/data-and-architecture.md) | Defines the data model, system boundaries, security, and delivery approach |
 | 15 | Launch | [Pilot season roadmap](09-launch/pilot-season-roadmap.md) | Defines phases, gates, milestones, metrics, and first-season execution |
