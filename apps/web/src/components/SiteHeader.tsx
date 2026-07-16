@@ -3,15 +3,16 @@ import { ArrowUpRight, Menu, X } from "lucide-react";
 import { Button, Container } from "@htx/design-system";
 
 const navItems = [
-  ["Competition", "#competition"],
-  ["For teams", "#teams"],
-  ["Matchday", "#matchday"],
-  ["Updates", "#updates"],
-  ["Partners", "#partners"],
+  ["Competition", "/competition"],
+  ["For teams", "/teams"],
+  ["Partners", "/partners"],
+  ["Updates", "/updates"],
+  ["About", "/about"],
 ] as const;
 
 export function SiteHeader() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const currentPath = window.location.pathname;
 
   const closeMenu = () => setMenuOpen(false);
 
@@ -24,16 +25,16 @@ export function SiteHeader() {
         <Container className="utility-bar__inner">
           <span>A new Houston competition</span>
           <div className="utility-bar__links" aria-label="Utility navigation">
-            <a href="#about">About</a>
-            <a href="#partners">Partners</a>
-            <a href="#interest">Contact</a>
+            <a href="/about">About</a>
+            <a href="/partners">Partners</a>
+            <a href="/contact">Contact</a>
             <span className="utility-bar__owner">A TRIMNDS venture</span>
           </div>
         </Container>
       </div>
       <header className="site-header">
         <Container className="site-header__inner">
-          <a className="site-header__brand" href="#top" aria-label="HTX Super League home">
+          <a className="site-header__brand" href="/" aria-label="HTX Super League home">
             <span className="site-header__logo-window" aria-hidden="true">
               <img
                 src="/brand/htx-slab-white-on-black.png"
@@ -46,13 +47,13 @@ export function SiteHeader() {
 
           <nav className="desktop-nav" aria-label="Primary navigation">
             {navItems.map(([label, href]) => (
-              <a key={href} href={href}>
+              <a key={href} href={href} aria-current={currentPath === href ? "page" : undefined}>
                 {label}
               </a>
             ))}
           </nav>
 
-          <Button className="desktop-cta" href="#interest" size="small">
+          <Button className="desktop-cta" href="/teams#interest" size="small">
             Register interest <ArrowUpRight aria-hidden="true" size={17} />
           </Button>
 
@@ -76,17 +77,17 @@ export function SiteHeader() {
         >
           <Container>
             {navItems.map(([label, href]) => (
-              <a key={href} href={href} onClick={closeMenu}>
+              <a key={href} href={href} onClick={closeMenu} aria-current={currentPath === href ? "page" : undefined}>
                 {label}
               </a>
             ))}
-            <Button href="#interest" onClick={closeMenu}>
+            <Button href="/teams#interest" onClick={closeMenu}>
               Register interest <ArrowUpRight aria-hidden="true" size={18} />
             </Button>
           </Container>
         </nav>
       </header>
-      <a className="status-strip" href="#interest">
+      <a className="status-strip" href="/teams#interest">
         <Container className="status-strip__inner">
           <span className="status-strip__state">Interest open</span>
           <span>Founding season team and captain interest</span>

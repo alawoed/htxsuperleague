@@ -160,7 +160,8 @@ select {
   transition: transform var(--htx-motion-fast) var(--htx-ease);
 }
 
-.desktop-nav a:hover::after {
+.desktop-nav a:hover::after,
+.desktop-nav a[aria-current="page"]::after {
   transform: scaleX(1);
 }
 

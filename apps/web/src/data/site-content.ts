@@ -38,27 +38,3 @@ export const captainBenefits = [
   "Transparent rules, discipline, and appeals",
 ];
 
-export const updates = [
-  {
-    category: "Competition",
-    title: "Why 9v9 is the starting point for HTX",
-    summary: "The space, speed, and roster flexibility behind the founding format.",
-    image: "/images/stock/hero-match.jpg",
-    alt: "Adult soccer players contesting a header during a local match",
-  },
-  {
-    category: "Founding season",
-    title: "What captains can expect from the pilot",
-    summary: "The operating principles shaping applications, communication, and matchdays.",
-    image: "/images/stock/team-huddle.jpg",
-    alt: "Adult soccer team joining hands in a pre-match huddle",
-  },
-  {
-    category: "Standards",
-    title: "Building a league that respects the officials",
-    summary: "How preparation, conduct, and consistent processes support better competition.",
-    image: "/images/stock/referee.jpg",
-    alt: "Soccer referee walking onto a sunlit field",
-  },
-];
-

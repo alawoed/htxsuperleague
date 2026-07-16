@@ -1,0 +1,45 @@
+export const articles = [
+  {
+    slug: "why-9v9",
+    category: "Competition",
+    title: "Why 9v9 is the starting point for HTX",
+    summary: "The space, speed, and roster flexibility behind the founding format.",
+    image: "/images/stock/hero-match.jpg",
+    alt: "Adult soccer players contesting a header during a local match",
+    published: "Founding note · July 2026",
+    sections: [
+      ["A deliberate starting point", "The first competition format has to balance soccer quality with the realities of launching reliably. Nine-a-side creates tactical variety and meaningful space while keeping roster and field requirements manageable for a pilot."],
+      ["What still needs approval", "Field dimensions, match duration, substitution rules, roster limits, competition dates, and fees remain subject to founder, venue, officiating, insurance, and legal review. The published rules—not this editorial note—will govern play."],
+      ["What success should look like", "Teams should experience dependable scheduling, clear communication, appropriate officiating, useful competition data, and a matchday identity that feels consistent from one round to the next."],
+    ],
+  },
+  {
+    slug: "captain-pilot-expectations",
+    category: "Founding season",
+    title: "What captains can expect from the pilot",
+    summary: "The operating principles shaping applications, communication, and matchdays.",
+    image: "/images/stock/team-huddle.jpg",
+    alt: "Adult soccer team joining hands in a pre-match huddle",
+    published: "Founder note · July 2026",
+    sections: [
+      ["Clarity before commitment", "Captains should receive confirmed dates, venue information, fees, inclusions, rules, refund terms, and application requirements before being asked to make a paid commitment."],
+      ["One accountable route", "The league intends to provide one official schedule, named support channels, published deadlines, and defined escalation paths so captains are not forced to reconstruct important information from group chats."],
+      ["A shared responsibility", "Reliable competition also depends on teams. Captains will be expected to communicate promptly, manage roster requirements, meet deadlines, and reinforce conduct standards with every player."],
+    ],
+  },
+  {
+    slug: "respecting-officials",
+    category: "Standards",
+    title: "Building a league that respects the officials",
+    summary: "How preparation, conduct, and consistent processes support better competition.",
+    image: "/images/stock/referee.jpg",
+    alt: "Soccer referee walking onto a sunlit field",
+    published: "Standards note · July 2026",
+    sections: [
+      ["Set officials up to succeed", "Good officiating begins before kickoff. Confirmed assignments, field information, rules access, arrival standards, equipment support, and a named matchday contact reduce avoidable uncertainty."],
+      ["Protect the environment", "Player and spectator conduct expectations must be explicit. Reporting, discipline, and appeals should follow a consistent process rather than being improvised after a difficult incident."],
+      ["Review the system", "The league should track assignment coverage, late changes, incidents, feedback, and payment timing. Improvement comes from operational evidence, not public blame."],
+    ],
+  },
+] as const;
+

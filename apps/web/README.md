@@ -32,10 +32,18 @@ Leave the Netlify dashboard base directory empty so the repository-root configur
 
 ## Current scope
 
-- responsive homepage and navigation;
+- responsive shared header, footer, status bar, metadata, and 404 state;
+- complete Release A route set:
+  - `/` — Home;
+  - `/competition` — format, season structure, matchday standards, and FAQs;
+  - `/teams` — captain journey, readiness guidance, and team-interest form;
+  - `/partners` — partnership inventory, approved partner roster, and inquiry form;
+  - `/updates` and `/updates/:slug` — editorial index and initial stories;
+  - `/about` — purpose, operating values, and TRIMNDS relationship;
+  - `/contact` — structured help routes and general inquiry form;
+  - `/privacy`, `/terms`, and `/accessibility` — provisional policy templates;
 - founding-season status and proposed competition baseline;
-- competition, matchday, captain, updates, partner, and interest sections;
-- accessible prototype interest form with no external data transmission;
+- accessible prototype forms with no external data transmission;
 - temporary licensed stock photography with disclosure;
 - shared tokens and primitives from `packages/design-system`.
 
@@ -45,4 +53,6 @@ Leave the Netlify dashboard base directory empty so the repository-root configur
 - content management;
 - analytics and consent platform;
 - registration, authentication, payments, fixtures, standings, teams, or player data;
-- final approved SVG brand assets.
+- confirmed production domain and canonical sitemap URLs.
+
+Schedule, results, standings, team directories, roster views, and match pages remain intentionally unpublished until approved competition data exists.
