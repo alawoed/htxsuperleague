@@ -20,6 +20,8 @@ export function TeamsPage() {
         title="Less chasing. More leading."
         body="Captains already carry the team. HTX Super League should reduce uncertainty, make expectations visible, and give organized teams a competition they can plan around."
         image="/images/stock/team-huddle.jpg"
+        imageWidth={1600}
+        imageHeight={1067}
         aside={<><span>Interest stage</span><strong>No fee today</strong><p>The form qualifies demand only. It does not reserve a place or authorize payment.</p></>}
       />
 

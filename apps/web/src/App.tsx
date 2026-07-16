@@ -12,6 +12,7 @@ import { PartnersPage } from "./pages/PartnersPage";
 import { TeamsPage } from "./pages/TeamsPage";
 import { UpdatesPage } from "./pages/UpdatesPage";
 import { articles } from "./data/articles";
+import { siteSettings } from "./data/site-settings";
 
 type Route = { page: ReactNode; title: string; description: string; found?: boolean };
 
@@ -41,16 +42,79 @@ function resolveRoute(pathname: string): Route {
 
 function Metadata({ title, description }: Pick<Route, "title" | "description">) {
   useEffect(() => {
+    const origin = window.location.origin;
+    const canonicalUrl = new URL(window.location.pathname, origin).toString();
+    const socialImageUrl = new URL(siteSettings.socialImage, origin).toString();
+    const setMeta = (selector: string, attribute: "name" | "property", key: string, content: string) => {
+      let element = document.head.querySelector<HTMLMetaElement>(selector);
+      if (!element) {
+        element = document.createElement("meta");
+        element.setAttribute(attribute, key);
+        document.head.appendChild(element);
+      }
+      element.content = content;
+    };
+
     document.title = title;
-    document.querySelector('meta[name="description"]')?.setAttribute("content", description);
+    setMeta('meta[name="description"]', "name", "description", description);
+    setMeta('meta[property="og:title"]', "property", "og:title", title);
+    setMeta('meta[property="og:description"]', "property", "og:description", description);
+    setMeta('meta[property="og:type"]', "property", "og:type", window.location.pathname.startsWith("/updates/") ? "article" : "website");
+    setMeta('meta[property="og:url"]', "property", "og:url", canonicalUrl);
+    setMeta('meta[property="og:image"]', "property", "og:image", socialImageUrl);
+    setMeta('meta[name="twitter:card"]', "name", "twitter:card", "summary_large_image");
+    setMeta('meta[name="twitter:title"]', "name", "twitter:title", title);
+    setMeta('meta[name="twitter:description"]', "name", "twitter:description", description);
+    setMeta('meta[name="twitter:image"]', "name", "twitter:image", socialImageUrl);
+
+    let canonical = document.head.querySelector<HTMLLinkElement>('link[rel="canonical"]');
+    if (!canonical) {
+      canonical = document.createElement("link");
+      canonical.rel = "canonical";
+      document.head.appendChild(canonical);
+    }
+    canonical.href = canonicalUrl;
     window.scrollTo(0, 0);
   }, [title, description]);
   return null;
 }
 
+function StructuredData() {
+  const origin = window.location.origin;
+  const path = window.location.pathname;
+  const article = path.startsWith("/updates/") ? articles.find((item) => item.slug === path.slice("/updates/".length)) : undefined;
+  const data = [
+    {
+      "@context": "https://schema.org",
+      "@type": "SportsOrganization",
+      name: siteSettings.name,
+      url: origin,
+      logo: new URL("/brand/htx-slab-white-on-black.png", origin).toString(),
+      description: siteSettings.defaultDescription,
+      parentOrganization: { "@type": "Organization", name: "TRIMNDS", url: "https://www.trimnds.com" },
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      name: siteSettings.name,
+      url: origin,
+    },
+    ...(article ? [{
+      "@context": "https://schema.org",
+      "@type": "Article",
+      headline: article.title,
+      description: article.summary,
+      image: new URL(article.image, origin).toString(),
+      mainEntityOfPage: new URL(path, origin).toString(),
+      publisher: { "@type": "SportsOrganization", name: siteSettings.name },
+    }] : []),
+  ];
+  return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }} />;
+}
+
 function App() {
   const route = resolveRoute(window.location.pathname);
-  return <div id="top"><Metadata title={route.title} description={route.description} /><SiteHeader />{route.page}<SiteFooter /></div>;
+  return <div id="top"><Metadata title={route.title} description={route.description} /><StructuredData /><SiteHeader />{route.page}<SiteFooter /></div>;
 }
 
 export default App;

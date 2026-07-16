@@ -6,6 +6,8 @@ export const articles = [
     summary: "The space, speed, and roster flexibility behind the founding format.",
     image: "/images/stock/hero-match.jpg",
     alt: "Adult soccer players contesting a header during a local match",
+    width: 2000,
+    height: 1255,
     published: "Founding note · July 2026",
     sections: [
       ["A deliberate starting point", "The first competition format has to balance soccer quality with the realities of launching reliably. Nine-a-side creates tactical variety and meaningful space while keeping roster and field requirements manageable for a pilot."],
@@ -20,6 +22,8 @@ export const articles = [
     summary: "The operating principles shaping applications, communication, and matchdays.",
     image: "/images/stock/team-huddle.jpg",
     alt: "Adult soccer team joining hands in a pre-match huddle",
+    width: 1600,
+    height: 1067,
     published: "Founder note · July 2026",
     sections: [
       ["Clarity before commitment", "Captains should receive confirmed dates, venue information, fees, inclusions, rules, refund terms, and application requirements before being asked to make a paid commitment."],
@@ -34,6 +38,8 @@ export const articles = [
     summary: "How preparation, conduct, and consistent processes support better competition.",
     image: "/images/stock/referee.jpg",
     alt: "Soccer referee walking onto a sunlit field",
+    width: 1600,
+    height: 2361,
     published: "Standards note · July 2026",
     sections: [
       ["Set officials up to succeed", "Good officiating begins before kickoff. Confirmed assignments, field information, rules access, arrival standards, equipment support, and a named matchday contact reduce avoidable uncertainty."],
@@ -42,4 +48,3 @@ export const articles = [
     ],
   },
 ] as const;
-

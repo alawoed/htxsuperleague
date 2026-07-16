@@ -568,10 +568,10 @@ Recommended initial territory:
 
 | Token role | Provisional value | Use |
 |---|---|---|
-| Ink | `#0B0F14` | Primary dark background and text |
+| Primary Navy | `#0E2433` | Primary dark background and text; `Ink` remains a compatibility token name in the current codebase |
 | Chalk | `#F4F1E8` | Warm light background |
 | White | `#FFFFFF` | High-contrast text and clean surfaces |
-| Volt | `#C8FF3D` | Restrained competition accent on Ink and approved micro-mark contexts |
+| Volt | `#C8FF3D` | Restrained competition accent on Primary Navy and approved micro-mark contexts |
 | Steel | `#7C8793` | Large secondary display details only |
 | Muted | `#626C76` | Normal secondary text on Chalk |
 | Signal | `#F04F3D` | Warnings, urgent changes, disciplinary/error states |
@@ -579,7 +579,7 @@ Recommended initial territory:
 Rules:
 
 - Never place Volt text, icons, rules, or the mark on White or Chalk. Volt-on-White and Volt-on-Chalk are prohibited combinations.
-- Use Ink-filled controls on light surfaces and Chalk-filled controls on Ink surfaces. Never use Volt as a control, status-label, or announcement-bar fill; use Volt on Ink only for short accent or display moments.
+- Use Primary Navy-filled controls on light surfaces and Chalk-filled controls on Primary Navy surfaces. Never use Volt as a control, status-label, or announcement-bar fill; use Volt on Primary Navy only for short accent or display moments.
 - Use Muted rather than Steel for normal secondary text on Chalk.
 - Keep the primary and secondary marks monochrome. The retired Volt-eye treatment must not return in digital applications.
 - Signal is semantic and should not compete with the primary action color.

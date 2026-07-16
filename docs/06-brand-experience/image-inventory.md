@@ -3,6 +3,8 @@
 **Status:** Initial stock set acquired for prototype use  
 **Rule:** These images do not depict HTX Super League events and must not be captioned or presented as if they do.
 
+Published stock assets now include 800, 1200, and 1600 pixel WebP derivatives alongside the licensed JPEG fallback. The homepage hero also includes a 2000 pixel WebP derivative. Website components must use `srcset`, `sizes`, intrinsic dimensions, and the visible stock disclosure. Source JPEGs remain the provenance-preserving fallback and should not be requested by modern browsers under normal conditions.
+
 ## Acquired prototype assets
 
 | Local file | Planned use | Creator and source | License source | Replacement priority | Notes / alt direction |
@@ -36,5 +38,4 @@
 - Record creator, date, event, subjects, releases, dominant orientation, and approved usages in asset metadata.
 - Capture horizontal, vertical, and safe-crop variants of signature moments.
 - Do not publish identifiable minors without explicit guardian consent and an approved safeguarding workflow.
-- Export responsive AVIF/WebP derivatives after original photography replaces the prototype JPEGs.
-
+- Export responsive AVIF/WebP derivatives after original photography replaces the prototype JPEGs; retain the approved original as the provenance source and fallback.

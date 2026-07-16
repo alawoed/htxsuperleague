@@ -11,10 +11,11 @@
     "dev": "npm run dev --workspace @htx/web",
     "build": "npm run build --workspace @htx/web",
     "preview": "npm run preview --workspace @htx/web",
+    "test:a11y": "npm run test:a11y --workspace @htx/web",
+    "test:performance": "npm run test:performance --workspace @htx/web",
     "typecheck": "npm run typecheck --workspace @htx/web"
   },
   "engines": {
     "node": ">=22"
   }
 }
-

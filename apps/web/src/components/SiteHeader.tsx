@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { ArrowUpRight, Menu, X } from "lucide-react";
 import { Button, Container } from "@htx/design-system";
+import { siteSettings } from "../data/site-settings";
 
 const navItems = [
   ["Competition", "/competition"],
@@ -53,7 +54,7 @@ export function SiteHeader() {
             ))}
           </nav>
 
-          <Button className="desktop-cta" href="/teams#interest" size="small">
+          <Button className="desktop-cta" href={siteSettings.status.href} size="small">
             Register interest <ArrowUpRight aria-hidden="true" size={17} />
           </Button>
 
@@ -81,16 +82,16 @@ export function SiteHeader() {
                 {label}
               </a>
             ))}
-            <Button href="/teams#interest" onClick={closeMenu}>
+            <Button href={siteSettings.status.href} onClick={closeMenu}>
               Register interest <ArrowUpRight aria-hidden="true" size={18} />
             </Button>
           </Container>
         </nav>
       </header>
-      <a className="status-strip" href="/teams#interest">
+      <a className="status-strip" href={siteSettings.status.href}>
         <Container className="status-strip__inner">
-          <span className="status-strip__state">Interest open</span>
-          <span>Founding season team and captain interest</span>
+          <span className="status-strip__state">{siteSettings.status.label}</span>
+          <span>{siteSettings.status.message}</span>
           <ArrowUpRight aria-hidden="true" size={17} />
         </Container>
       </a>

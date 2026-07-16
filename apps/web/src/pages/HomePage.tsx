@@ -18,6 +18,7 @@ import {
 } from "../data/site-content";
 import { partners } from "../data/partners";
 import { articles } from "../data/articles";
+import { stockImageSrcSet } from "../utils/images";
 
 export function HomePage() {
   return (
@@ -26,6 +27,8 @@ export function HomePage() {
           <div className="hero__media" aria-hidden="true">
             <img
               src="/images/stock/hero-match.jpg"
+              srcSet={stockImageSrcSet("/images/stock/hero-match.jpg", [800, 1200, 1600, 2000])}
+              sizes="100vw"
               alt=""
               width="2000"
               height="1255"
@@ -145,6 +148,8 @@ export function HomePage() {
               <figure className="matchday-grid__feature">
                 <img
                   src="/images/stock/community-match.jpg"
+                  srcSet={stockImageSrcSet("/images/stock/community-match.jpg")}
+                  sizes="(max-width: 760px) 100vw, 66vw"
                   alt="Adult players competing in front of a community crowd"
                   width="1800"
                   height="1200"
@@ -158,6 +163,8 @@ export function HomePage() {
               <figure>
                 <img
                   src="/images/stock/referee.jpg"
+                  srcSet={stockImageSrcSet("/images/stock/referee.jpg")}
+                  sizes="(max-width: 760px) 100vw, 34vw"
                   alt="Soccer referee walking onto a sunlit field"
                   width="1600"
                   height="2361"
@@ -171,6 +178,8 @@ export function HomePage() {
               <figure>
                 <img
                   src="/images/stock/night-goal.jpg"
+                  srcSet={stockImageSrcSet("/images/stock/night-goal.jpg")}
+                  sizes="(max-width: 760px) 100vw, 34vw"
                   alt="Soccer field and goal under lights at night"
                   width="1800"
                   height="1200"
@@ -191,12 +200,15 @@ export function HomePage() {
             <div className="captain__image">
               <img
                 src="/images/stock/team-huddle.jpg"
+                srcSet={stockImageSrcSet("/images/stock/team-huddle.jpg")}
+                sizes="(max-width: 760px) 100vw, 55vw"
                 alt="Adult soccer team joining hands before a match"
                 width="1600"
                 height="1067"
                 loading="lazy"
               />
               <div className="captain__image-label">Built with captains, not just for them.</div>
+              <span className="captain__stock-note">Temporary licensed stock image. Not an HTX Super League event.</span>
             </div>
             <div className="captain__content">
               <span className="eyebrow">For team captains</span>
@@ -230,7 +242,7 @@ export function HomePage() {
               {articles.map((story) => (
                 <article className="story-card" key={story.title}>
                   <div className="story-card__image">
-                    <img src={story.image} alt={story.alt} loading="lazy" />
+                    <img src={story.image} srcSet={stockImageSrcSet(story.image)} sizes="(max-width: 760px) 100vw, 33vw" alt={story.alt} width={story.width} height={story.height} loading="lazy" />
                   </div>
                   <div className="story-card__content">
                     <span>{story.category}</span>
@@ -243,6 +255,7 @@ export function HomePage() {
                 </article>
               ))}
             </div>
+            <p className="stock-note">Temporary licensed stock photography. These images do not depict an HTX Super League event.</p>
           </Container>
         </section>
 

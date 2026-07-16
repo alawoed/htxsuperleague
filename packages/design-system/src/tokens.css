@@ -1,7 +1,8 @@
 :root {
   color-scheme: light;
 
-  --htx-color-ink: #0b0f14;
+  --htx-color-primary: #0e2433;
+  --htx-color-ink: var(--htx-color-primary);
   --htx-color-chalk: #f4f1e8;
   --htx-color-white: #ffffff;
   --htx-color-volt: #c8ff3d;
@@ -47,7 +48,7 @@
   --htx-radius-lg: 1.25rem;
   --htx-radius-pill: 999px;
 
-  --htx-shadow-card: 0 18px 50px rgb(11 15 20 / 0.09);
+  --htx-shadow-card: 0 18px 50px rgb(14 36 51 / 0.09);
   --htx-container: 88rem;
   --htx-gutter: clamp(1rem, 3.5vw, 3.5rem);
   --htx-motion-fast: 160ms;

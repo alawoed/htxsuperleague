@@ -6,7 +6,7 @@
 
 ## Design premise
 
-HTX should feel like an editorial competition brand with operational precision. The system combines bold compressed display type, direct interface copy, a disciplined Ink-and-Chalk base, image-led storytelling, and small moments of Volt energy.
+HTX should feel like an editorial competition brand with operational precision. The system combines bold compressed display type, direct interface copy, a disciplined Primary Navy-and-Chalk base, image-led storytelling, and small moments of Volt energy.
 
 The website takes structural inspiration from leading competition sites: clear competition navigation, current-status messaging, modular editorial cards, and strong separation between league content and corporate information. It does not copy another league's visual identity, components, or page layouts.
 
@@ -14,22 +14,22 @@ The website takes structural inspiration from leading competition sites: clear c
 
 | Context | Mark | Approved treatment |
 |---|---|---|
-| Primary brand moment and site header | Stacked Slab | Small HTX above the full Super League name; Ink on Chalk/White, or Chalk/White on Ink |
+| Primary brand moment and site header | Stacked Slab | Small HTX above the full Super League name; Primary Navy on Chalk/White, or Chalk/White on Primary Navy |
 | Footer and wide layouts | Split Bar | HTX beside the rule; Super League wraps immediately beside it in the lighter display weight |
-| Favicon and tiny utility context | Standalone HTX | Chalk/White on Ink; Volt on Ink is optional only after final artwork approval |
+| Favicon and tiny utility context | Standalone HTX | Chalk/White on Primary Navy; Volt on Primary Navy is optional only after final artwork approval |
 
 Volt is not embedded in the primary mark. The prior Volt-eye direction is retired.
 
-The public site header uses the founder-supplied Stacked Slab PNG exactly as provided, with CSS cropping only its surrounding Ink presentation canvas. Do not recreate the mark with live type. The footer Split Bar and standalone favicon remain code-native monochrome stand-ins until their approved source files are supplied; replace those component internals without changing the public interface.
+The public site header uses the founder-supplied Stacked Slab PNG exactly as provided, with CSS cropping and blend treatment so its original presentation canvas resolves against Primary Navy. Do not recreate the mark with live type. The footer Split Bar and standalone favicon remain code-native monochrome stand-ins until their approved source files are supplied; replace those component internals without changing the public interface.
 
 ## Core palette
 
 | Token | Value | Role |
 |---|---:|---|
-| Ink | `#0B0F14` | Primary text, inverse surface, brand mark |
+| Primary Navy | `#0E2433` | Primary text, inverse surface, brand mark; implemented as `--htx-color-primary` with `--htx-color-ink` retained as a compatibility alias |
 | Chalk | `#F4F1E8` | Default page surface, inverse text |
 | White | `#FFFFFF` | Raised cards and limited high contrast |
-| Volt | `#C8FF3D` | Small accents on Ink and approved standalone micro marks; never a control fill |
+| Volt | `#C8FF3D` | Small accents on Primary Navy and approved standalone micro marks; never a control fill |
 | Steel | `#7C8793` | Large secondary display details only |
 | Muted | `#626C76` | Accessible normal secondary text on Chalk |
 | Signal | `#F04F3D` | Errors, warnings, and visible focus support |
@@ -38,10 +38,10 @@ The public site header uses the founder-supplied Stacked Slab PNG exactly as pro
 
 | Combination | Approximate ratio | Rule |
 |---|---:|---|
-| Ink on Chalk | 17.02:1 | Approved |
-| Ink on Volt | 16.32:1 | Contrast passes, but the treatment is not approved for controls or labels |
-| Chalk on Ink | 17.02:1 | Approved |
-| Steel on Ink | 5.26:1 | Approved for normal text, but Chalk is preferred |
+| Primary Navy on Chalk | 14.10:1 | Approved |
+| Primary Navy on Volt | 13.52:1 | Contrast passes, but the treatment is not approved for controls or labels |
+| Chalk on Primary Navy | 14.10:1 | Approved |
+| Steel on Primary Navy | 4.36:1 | Large display details only; fails the 4.5:1 normal-text target |
 | Muted on Chalk | 4.74:1 | Approved for normal secondary text |
 | Volt on White | 1.18:1 | Prohibited |
 | Volt on Chalk | 1.04:1 | Prohibited |
@@ -55,7 +55,7 @@ The public site header uses the founder-supplied Stacked Slab PNG exactly as pro
 - Display line-height stays between `0.91` and `1.05`; body copy stays between `1.55` and `1.65` with a readable maximum measure.
 - Avoid using compressed display type for paragraphs or form fields.
 
-Primary controls use Ink on light surfaces and Chalk on Ink surfaces. Volt is reserved for small accents, rules, and approved micro-mark contexts; never use it as a button, badge, or announcement-bar fill.
+Primary controls use Primary Navy on light surfaces and Chalk on Primary Navy surfaces. Volt is reserved for small accents, rules, and approved micro-mark contexts; never use it as a button, badge, or announcement-bar fill.
 
 ## Layout
 

@@ -18,7 +18,7 @@ export function InquiryForm({ name, defaultTopic, topics, submitLabel = "Send in
   };
 
   if (submitted) {
-    return <div className="form-success" role="status"><Check aria-hidden="true" /><div><strong>Inquiry received.</strong><p>This prototype has recorded the interaction locally. Connect the approved form endpoint and service-level response before public launch.</p></div></div>;
+    return <div className="form-success" role="status" tabIndex={-1}><Check aria-hidden="true" /><div><strong>Prototype inquiry completed.</strong><p>No information was transmitted or stored. The approved form endpoint, owner, and response-time commitment must be connected before public launch.</p></div></div>;
   }
 
   return (
@@ -28,8 +28,8 @@ export function InquiryForm({ name, defaultTopic, topics, submitLabel = "Send in
       <div className="form-field"><label htmlFor={`${name}-organization`}>Organization <span>Optional</span></label><input id={`${name}-organization`} name="organization" autoComplete="organization" /></div>
       <div className="form-field"><label htmlFor={`${name}-topic`}>Topic</label><select id={`${name}-topic`} name="topic" defaultValue={defaultTopic ?? topics[0]}>{topics.map((topic) => <option key={topic}>{topic}</option>)}</select></div>
       <div className="form-field form-field--wide"><label htmlFor={`${name}-message`}>How can we help?</label><textarea id={`${name}-message`} name="message" rows={6} required /></div>
-      <label className="form-consent form-field--wide"><input type="checkbox" required /><span>I consent to HTX Super League using these details to respond to this inquiry.</span></label>
-      <div className="form-field--wide"><Button type="submit">{submitLabel} <ArrowRight aria-hidden="true" size={18} /></Button><p className="form-note">Do not include payment information, identity documents, medical records, or emergency information.</p></div>
+      <label className="form-consent form-field--wide"><input name="contact_consent" type="checkbox" required /><span>I consent to HTX Super League using these details to respond to this inquiry.</span></label>
+      <div className="form-field--wide"><Button type="submit">{submitLabel} · prototype <ArrowRight aria-hidden="true" size={18} /></Button><p className="form-note">This prototype does not transmit data. Do not include payment information, identity documents, medical records, or emergency information.</p></div>
     </form>
   );
 }
