@@ -1,0 +1,20 @@
+{
+  "name": "htx-super-league",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace @htx/web",
+    "build": "npm run build --workspace @htx/web",
+    "preview": "npm run preview --workspace @htx/web",
+    "typecheck": "npm run typecheck --workspace @htx/web"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
+

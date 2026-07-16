@@ -7,11 +7,28 @@ The brand is customer-facing and operationally independent. It is owned and gove
 ## Current status
 
 **Stage:** Foundation and concept validation  
-**Code status:** Application development has not started  
+**Code status:** Public pre-launch website foundation implemented; authenticated platform not started  
 **Planning baseline:** One adult 18+ 9v9 pilot division, eight teams, subject to founder approval  
 **Recommended pilot window:** Spring 2027, subject to venue, insurance, sanctioning, and demand gates
 
-This repository is intentionally documentation-first. No application should be scaffolded until the founders approve the launch-blocking decisions, validate demand, confirm the operating model, and authorize the MVP scope.
+This repository began documentation-first. The public demand-validation website can now develop in parallel with founder decisions because it does not accept payment, imply registration approval, or depend on unresolved competition operations. The authenticated participant and administrative platform remains behind the original build gates.
+
+## Website development
+
+The repository is an npm workspace:
+
+- `apps/web` — responsive public pre-launch website;
+- `packages/design-system` — shared digital tokens and React primitives;
+- `docs/06-brand-experience` — website, design-system, and image guidance.
+
+Run the website from the repository root:
+
+```bash
+npm install
+npm run dev
+```
+
+Validate a production build with `npm run typecheck` and `npm run build`.
 
 ## Venture thesis
 
@@ -41,11 +58,13 @@ Start with the [documentation index](docs/README.md). The recommended reading or
 8. [Policy and risk framework](docs/05-legal-risk/policy-and-risk-framework.md)
 9. [Brand and customer experience](docs/06-brand-experience/brand-and-customer-experience.md)
 10. [Public website design document](docs/06-brand-experience/website-design-document.md)
-11. [Product requirements](docs/07-product/product-requirements.md)
-12. [Data and technical architecture](docs/08-technology/data-and-architecture.md)
-13. [Pilot season roadmap](docs/09-launch/pilot-season-roadmap.md)
-14. [Sponsorship and partnership strategy](docs/10-partnerships/sponsorship-and-partnerships.md)
-15. [Growth plan](docs/11-growth/growth-plan.md)
+11. [Digital design system](docs/06-brand-experience/digital-design-system.md)
+12. [Website image inventory](docs/06-brand-experience/image-inventory.md)
+13. [Product requirements](docs/07-product/product-requirements.md)
+14. [Data and technical architecture](docs/08-technology/data-and-architecture.md)
+15. [Pilot season roadmap](docs/09-launch/pilot-season-roadmap.md)
+16. [Sponsorship and partnership strategy](docs/10-partnerships/sponsorship-and-partnerships.md)
+17. [Growth plan](docs/11-growth/growth-plan.md)
 
 ## Repository principles
 

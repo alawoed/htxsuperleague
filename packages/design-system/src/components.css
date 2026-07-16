@@ -1,0 +1,206 @@
+.htx-container {
+  width: min(100%, var(--htx-container));
+  margin-inline: auto;
+  padding-inline: var(--htx-gutter);
+}
+
+.htx-brand-mark {
+  display: inline-flex;
+  color: var(--htx-color-ink);
+  font-family: var(--htx-font-display);
+  font-weight: 800;
+  line-height: 0.78;
+  text-transform: uppercase;
+}
+
+.htx-brand-mark--light {
+  color: var(--htx-color-chalk);
+}
+
+.htx-brand-mark--split {
+  align-items: stretch;
+  gap: 0.5rem;
+}
+
+.htx-brand-mark--split .htx-brand-mark__htx {
+  font-size: 2.45rem;
+  letter-spacing: -0.06em;
+}
+
+.htx-brand-mark--split .htx-brand-mark__rule {
+  width: 2px;
+  background: currentColor;
+}
+
+.htx-brand-mark__league {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 1.15rem;
+  letter-spacing: -0.025em;
+}
+
+.htx-brand-mark--stacked {
+  display: grid;
+  gap: 0.4rem;
+}
+
+.htx-brand-mark--stacked .htx-brand-mark__htx {
+  font-size: clamp(4rem, 7vw, 7rem);
+  letter-spacing: -0.07em;
+}
+
+.htx-brand-mark--stacked .htx-brand-mark__rule {
+  display: none;
+}
+
+.htx-brand-mark--stacked .htx-brand-mark__league {
+  display: block;
+  font-size: clamp(1.6rem, 2.4vw, 2.5rem);
+  letter-spacing: 0.005em;
+  line-height: 0.85;
+}
+
+.htx-brand-mark--stacked .htx-brand-mark__league span + span {
+  margin-left: 0.3em;
+}
+
+.htx-button {
+  display: inline-flex;
+  min-height: 2.9rem;
+  align-items: center;
+  justify-content: center;
+  gap: 0.65rem;
+  border: 1px solid transparent;
+  border-radius: var(--htx-radius-pill);
+  font-family: var(--htx-font-body);
+  font-size: 0.86rem;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  text-decoration: none;
+  transition:
+    transform var(--htx-motion-fast) var(--htx-ease),
+    background var(--htx-motion-fast) var(--htx-ease),
+    color var(--htx-motion-fast) var(--htx-ease),
+    border-color var(--htx-motion-fast) var(--htx-ease);
+  cursor: pointer;
+}
+
+.htx-button:hover {
+  transform: translateY(-2px);
+}
+
+.htx-button--small {
+  min-height: 2.55rem;
+  padding: 0.72rem 1.15rem;
+}
+
+.htx-button--medium {
+  padding: 0.9rem 1.4rem;
+}
+
+.htx-button--large {
+  min-height: 3.35rem;
+  padding: 1rem 1.65rem;
+}
+
+.htx-button--primary {
+  background: var(--htx-color-volt);
+  color: var(--htx-color-ink);
+}
+
+.htx-button--primary:hover {
+  background: var(--htx-color-white);
+}
+
+.htx-button--outline {
+  border-color: var(--htx-color-ink);
+  background: transparent;
+  color: var(--htx-color-ink);
+}
+
+.htx-button--outline:hover {
+  background: var(--htx-color-ink);
+  color: var(--htx-color-chalk);
+}
+
+.htx-button--outline-inverse,
+.htx-button--ghost-inverse {
+  border-color: rgb(244 241 232 / 0.58);
+  background: transparent;
+  color: var(--htx-color-chalk);
+}
+
+.htx-button--outline-inverse:hover,
+.htx-button--ghost-inverse:hover {
+  border-color: var(--htx-color-chalk);
+  background: var(--htx-color-chalk);
+  color: var(--htx-color-ink);
+}
+
+.htx-section-header {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(18rem, 0.65fr);
+  gap: clamp(2rem, 6vw, 7rem);
+  align-items: end;
+  margin-bottom: clamp(2.5rem, 5vw, 4.5rem);
+}
+
+.htx-eyebrow,
+.eyebrow {
+  display: block;
+  margin-bottom: 0.9rem;
+  color: var(--htx-color-muted);
+  font-family: var(--htx-font-body);
+  font-size: var(--htx-step--1);
+  font-weight: 700;
+  letter-spacing: 0.13em;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.htx-section-header h2 {
+  max-width: 15ch;
+  margin: 0;
+  font-family: var(--htx-font-display);
+  font-size: var(--htx-step-4);
+  font-weight: 800;
+  letter-spacing: -0.035em;
+  line-height: 0.9;
+  text-transform: uppercase;
+}
+
+.htx-section-header__support p {
+  margin: 0 0 1.5rem;
+  color: var(--htx-color-muted);
+  font-size: var(--htx-step-0);
+  line-height: 1.7;
+}
+
+.htx-section-header__support a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--htx-color-ink);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+@media (max-width: 760px) {
+  .htx-section-header {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .htx-section-header h2 {
+    max-width: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .htx-button {
+    transition: none;
+  }
+}
+

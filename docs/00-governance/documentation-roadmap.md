@@ -26,16 +26,17 @@ htxsuperleague/
 │   ├── 11-growth/
 │   ├── research/
 │   └── templates/
-├── apps/                 # Future: deployable applications
-│   ├── web/              # Public site and authenticated web app
+├── apps/                 # Deployable applications
+│   ├── web/              # Current: public site; authenticated workflows remain gated
 │   └── worker/           # Future only if background processing warrants it
-├── packages/             # Future: shared domain, UI, data, and configuration packages
+├── packages/
+│   └── design-system/    # Current: shared digital tokens and React primitives
 ├── infrastructure/       # Future: deployment and environment configuration
 ├── tests/                # Future: cross-application and acceptance tests
 └── .github/              # Pull request, issue, ownership, and CI configuration
 ```
 
-Do not create empty application directories merely to imply progress. Add them only when the build gate is approved and the first implementation commit needs them.
+Do not create empty application directories merely to imply progress. The public pre-launch website and design-system package now exist because the founders authorized demand-validation website work. Authenticated, payment, participant, and administrative features remain subject to the original build gates.
 
 ## Documentation sequence
 
@@ -123,4 +124,3 @@ Legal documents in this list require qualified Texas counsel and insurer/sanctio
 8. Conduct brand, domain, social, and trademark clearance.
 9. Draft the rules outline for counsel, officials, and venue review.
 10. Define the MVP acceptance criteria and build budget.
-

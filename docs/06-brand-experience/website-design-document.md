@@ -560,9 +560,9 @@ The visual system should combine the energy of small-sided soccer with the disci
 
 Houston identity should come through the name, teams, people, venues, stories, and community—not through tourism iconography.
 
-## Provisional color system
+## Digital color system
 
-Final colors must follow the approved HTX identity and logo. The website should be built with semantic tokens so the palette can change without redesigning components.
+The implemented semantic tokens and contrast rules are maintained in [Digital Design System](digital-design-system.md) and `packages/design-system`. Components must use semantic roles so a future palette revision does not require page-level redesign.
 
 Recommended initial territory:
 
@@ -572,12 +572,16 @@ Recommended initial territory:
 | Chalk | `#F4F1E8` | Warm light background |
 | White | `#FFFFFF` | High-contrast text and clean surfaces |
 | Volt | `#C8FF3D` | Primary action and competition accent |
-| Steel | `#7C8793` | Secondary information and disabled states |
+| Steel | `#7C8793` | Large secondary display details only |
+| Muted | `#626C76` | Normal secondary text on Chalk |
 | Signal | `#F04F3D` | Warnings, urgent changes, disciplinary/error states |
 
 Rules:
 
-- Use Ink on Volt for small action text; do not use Volt text on Chalk for ordinary body copy.
+- Never place Volt text, icons, rules, or the mark on White or Chalk. Volt-on-White and Volt-on-Chalk are prohibited combinations.
+- Use Ink on Volt for filled controls and status labels; use Volt on Ink only for short accent or display moments.
+- Use Muted rather than Steel for normal secondary text on Chalk.
+- Keep the primary and secondary marks monochrome. The retired Volt-eye treatment must not return in digital applications.
 - Signal is semantic and should not compete with the primary action color.
 - Check every foreground/background pair against WCAG 2.2 AA.
 - Team colors may appear inside controlled team contexts but must not redefine global interface meaning.
@@ -981,4 +985,3 @@ Design exploration can begin before these are resolved, but final production app
 8. Replace provisional content and imagery as founder, venue, competition, and legal decisions are approved.
 
 This sequence allows the website to create momentum now while protecting HTX Super League from presenting planning assumptions as binding league commitments.
-
