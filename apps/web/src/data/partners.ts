@@ -17,7 +17,7 @@ export const partners: Partner[] = [
     treatment: "trimnds",
   },
   {
-    name: "GRIPHCON",
+    name: "GRIPHCON TECHNOLOGIES",
     href: "https://www.griphcon.com",
     logo: "/partners/griphcon-logo.png",
     width: 2007,

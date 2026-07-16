@@ -11,6 +11,7 @@ import {
   SectionHeader,
 } from "@htx/design-system";
 import { InterestForm } from "../components/InterestForm";
+import { PartnerLogo } from "../components/PartnerLogo";
 import {
   captainBenefits,
   competitionFacts,
@@ -273,40 +274,7 @@ export function HomePage() {
             </div>
 
             <div className="partner-roster__grid" role="list">
-              {partners.map((partner) => {
-                const logo = (
-                  <img
-                    src={partner.logo}
-                    alt={`${partner.name} logo`}
-                    width={partner.width}
-                    height={partner.height}
-                    loading="lazy"
-                  />
-                );
-
-                return partner.href ? (
-                  <a
-                    className={`partner-logo partner-logo--${partner.treatment}`}
-                    href={partner.href}
-                    target="_blank"
-                    rel="noreferrer"
-                    role="listitem"
-                    aria-label={`Visit ${partner.name}`}
-                    key={partner.name}
-                  >
-                    {logo}
-                  </a>
-                ) : (
-                  <div
-                    className={`partner-logo partner-logo--${partner.treatment}`}
-                    role="listitem"
-                    aria-label={`${partner.name}; production website pending`}
-                    key={partner.name}
-                  >
-                    {logo}
-                  </div>
-                );
-              })}
+              {partners.map((partner) => <PartnerLogo partner={partner} key={partner.name} />)}
             </div>
           </Container>
         </section>

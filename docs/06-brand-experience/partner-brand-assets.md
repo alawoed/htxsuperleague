@@ -11,7 +11,7 @@ HTX Super League stores partner marks locally to keep presentation stable, remov
 | Partner | Website | Website state | Local logo |
 |---|---|---|---|
 | TRIMNDS | [trimnds.com](https://www.trimnds.com) | Live | `/partners/trimnds-logo.svg` |
-| GRIPHCON | [griphcon.com](https://www.griphcon.com) | Live | `/partners/griphcon-logo.png` |
+| GRIPHCON | [griphcon.com](https://www.griphcon.com) | Live | `/partners/griphcon-logo.png` plus responsive uppercase HTML wordmark |
 | HAP HEIGHT | [hapheight.com](https://www.hapheight.com) | Live | `/partners/hap-height-logo.svg` |
 | SOLIELI | [solieli.netlify.app](https://solieli.netlify.app) | Live interim deployment | `/partners/solieli-logo.svg` |
 | WELLTRACE | To be confirmed | Production deployment pending | `/partners/welltrace-logo.svg` |
@@ -21,4 +21,3 @@ HTX Super League stores partner marks locally to keep presentation stable, remov
 The partner register is controlled brand content. A logo, URL, partner designation, or ordering change requires confirmation from the HTX Super League brand owner. Partnership status must not be inferred from the mere presence of an asset in the repository.
 
 Before launch, confirm partner approval for public display, final destination URLs, accessibility labels, and any contractual placement obligations. WELLTRACE must remain non-linked until its production domain is verified.
-

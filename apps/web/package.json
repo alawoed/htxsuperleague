@@ -12,6 +12,7 @@
     "typecheck": "tsc -b --pretty false"
   },
   "dependencies": {
+    "@fontsource-variable/plus-jakarta-sans": "^5.2.8",
     "@fontsource/barlow-condensed": "5.2.8",
     "@fontsource/manrope": "5.2.8",
     "@htx/design-system": "0.1.0",

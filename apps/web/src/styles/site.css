@@ -818,9 +818,62 @@ a.partner-logo:hover {
   filter: grayscale(1) brightness(0) invert(1);
 }
 
-.partner-logo--griphcon img {
-  max-width: 4.75rem;
-  max-height: 6rem;
+.partner-logo--griphcon {
+  padding-inline: clamp(1rem, 1.8vw, 1.75rem);
+}
+
+.griphcon-lockup {
+  display: grid;
+  grid-template-columns: 2.75rem auto;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
+  width: max-content;
+  max-width: 100%;
+  min-width: 0;
+}
+
+.partner-logo--griphcon .griphcon-lockup__mark {
+  display: block;
+  width: 2.75rem;
+  height: 2.75rem;
+  max-width: none;
+  max-height: none;
+  object-fit: contain;
+}
+
+.griphcon-lockup__wordmark {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  font-family: "Trebuchet MS", "Plus Jakarta Sans Variable", "Plus Jakarta Sans", sans-serif;
+  line-height: 1;
+  text-align: left;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.griphcon-lockup__name,
+.griphcon-lockup__descriptor {
+  display: block;
+  white-space: nowrap;
+}
+
+.griphcon-lockup__name {
+  color: var(--htx-color-chalk);
+  font-size: 1.02rem;
+  font-weight: 800;
+  letter-spacing: 0.1224rem;
+}
+
+.griphcon-lockup__descriptor {
+  margin-top: 0.3125rem;
+  color: #b1c2df;
+  font-size: 0.57rem;
+  font-weight: 700;
+  letter-spacing: 0.1425rem;
 }
 
 .partner-logo--hap-height img {

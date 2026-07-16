@@ -1,6 +1,7 @@
 import { BarChart3, Building2, Camera, HeartHandshake, MapPinned, Trophy } from "lucide-react";
 import { Container, SectionHeader } from "@htx/design-system";
 import { InquiryForm } from "../components/InquiryForm";
+import { PartnerLogo } from "../components/PartnerLogo";
 import { PageHero } from "../components/PageHero";
 import { partners } from "../data/partners";
 
@@ -41,10 +42,7 @@ export function PartnersPage() {
         <Container>
           <SectionHeader eyebrow="Current partners" title="The founding network." body="Official TRIMNDS portfolio companies and strategic launch partners supporting the venture's first chapter." />
           <div className="partner-roster__grid" role="list">
-            {partners.map((partner) => {
-              const logo = <img src={partner.logo} alt={`${partner.name} logo`} width={partner.width} height={partner.height} loading="lazy" />;
-              return partner.href ? <a className={`partner-logo partner-logo--${partner.treatment}`} href={partner.href} target="_blank" rel="noreferrer" role="listitem" aria-label={`Visit ${partner.name}`} key={partner.name}>{logo}</a> : <div className={`partner-logo partner-logo--${partner.treatment}`} role="listitem" aria-label={`${partner.name}; production website pending`} key={partner.name}>{logo}</div>;
-            })}
+            {partners.map((partner) => <PartnerLogo partner={partner} key={partner.name} />)}
           </div>
         </Container>
       </section>
