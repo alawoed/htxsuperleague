@@ -29,7 +29,7 @@ The public site header uses the founder-supplied Stacked Slab PNG exactly as pro
 | Ink | `#0B0F14` | Primary text, inverse surface, brand mark |
 | Chalk | `#F4F1E8` | Default page surface, inverse text |
 | White | `#FFFFFF` | Raised cards and limited high contrast |
-| Volt | `#C8FF3D` | Accent on Ink; filled controls with Ink foreground |
+| Volt | `#C8FF3D` | Small accents on Ink and approved standalone micro marks; never a control fill |
 | Steel | `#7C8793` | Large secondary display details only |
 | Muted | `#626C76` | Accessible normal secondary text on Chalk |
 | Signal | `#F04F3D` | Errors, warnings, and visible focus support |
@@ -39,7 +39,7 @@ The public site header uses the founder-supplied Stacked Slab PNG exactly as pro
 | Combination | Approximate ratio | Rule |
 |---|---:|---|
 | Ink on Chalk | 17.02:1 | Approved |
-| Ink on Volt | 16.32:1 | Approved for controls and labels |
+| Ink on Volt | 16.32:1 | Contrast passes, but the treatment is not approved for controls or labels |
 | Chalk on Ink | 17.02:1 | Approved |
 | Steel on Ink | 5.26:1 | Approved for normal text, but Chalk is preferred |
 | Muted on Chalk | 4.74:1 | Approved for normal secondary text |
@@ -52,7 +52,10 @@ The public site header uses the founder-supplied Stacked Slab PNG exactly as pro
 - **Barlow Condensed 600–800:** hero statements, page and section titles, competition data, scores.
 - **Manrope 400–700:** navigation, body copy, labels, forms, tables, and operational information.
 - Headlines use compact line-height and sentence case. Uppercase is reserved for the brand mark, short labels, statuses, and competition data.
+- Display line-height stays between `0.91` and `1.05`; body copy stays between `1.55` and `1.65` with a readable maximum measure.
 - Avoid using compressed display type for paragraphs or form fields.
+
+Primary controls use Ink on light surfaces and Chalk on Ink surfaces. Volt is reserved for small accents, rules, and approved micro-mark contexts; never use it as a button, badge, or announcement-bar fill.
 
 ## Layout
 
