@@ -18,6 +18,18 @@ npm run typecheck
 npm run build
 ```
 
+## Netlify deployment
+
+The repository-root `netlify.toml` is the deployment source of truth:
+
+- build from the repository root with `npm run build`;
+- publish `apps/web/dist`;
+- use Node.js 22;
+- serve client-side routes through `index.html`;
+- apply baseline security and immutable hashed-asset cache headers.
+
+Leave the Netlify dashboard base directory empty so the repository-root configuration remains authoritative.
+
 ## Current scope
 
 - responsive homepage and navigation;
@@ -34,4 +46,3 @@ npm run build
 - analytics and consent platform;
 - registration, authentication, payments, fixtures, standings, teams, or player data;
 - final approved SVG brand assets.
-
